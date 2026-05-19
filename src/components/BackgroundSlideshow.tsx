@@ -9,7 +9,7 @@ const IMAGES = [
   "https://i.postimg.cc/Dyxj5KRN/Coachello-1.png"
 ];
 
-const SLIDE_IMAGES = [...IMAGES, ...IMAGES, ...IMAGES];
+const SLIDE_IMAGES = [...IMAGES, ...IMAGES];
 
 export function BackgroundSlideshow() {
   const [loadedCount, setLoadedCount] = useState(0);

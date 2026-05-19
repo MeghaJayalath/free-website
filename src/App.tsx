@@ -94,9 +94,15 @@ export default function App() {
   }, []);
 
   const handleFieldChange = (field: keyof FormData, value: string | Aesthetic[]) => {
+    let finalValue = value;
+    if (field === "phone" && typeof value === "string") {
+      // Auto-strip leading zeros (trunk prefixes) for international dialing compliance
+      finalValue = value.replace(/^0+/, "");
+    }
+
     setFormData((prev) => ({
       ...prev,
-      [field]: value,
+      [field]: finalValue,
     }));
   };
 
@@ -110,8 +116,9 @@ export default function App() {
   };
 
   const activeCountry = COUNTRIES.find((c) => c.iso === formData.countryCode) || COUNTRIES[0];
+  const cleanPhoneDigits = formData.phone.replace(/\D/g, "").replace(/^0+/, "");
   const fullPhoneNumber = activeCountry
-    ? `${activeCountry.code} ${formData.phone.replace(/\D/g, "")}`
+    ? `${activeCountry.code} ${cleanPhoneDigits}`
     : formData.phone;
 
   const isFormValid =

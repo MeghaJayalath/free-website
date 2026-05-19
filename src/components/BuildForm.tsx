@@ -57,7 +57,13 @@ export function BuildForm({
   try {
     const example = getExampleNumber(activeCountry.iso as any, examples);
     if (example) {
-      placeholder = example.formatNational();
+      let formatted = example.formatNational();
+      if (formatted.startsWith("0")) {
+        formatted = formatted.substring(1).trim();
+      } else if (formatted.startsWith("(0)")) {
+        formatted = formatted.substring(3).trim();
+      }
+      placeholder = formatted;
     }
   } catch (error) {
     // Fallback
