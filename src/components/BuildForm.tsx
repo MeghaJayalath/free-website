@@ -25,31 +25,20 @@ export interface BuildFormProps {
   onSubmit: (e: FormEvent) => void;
 }
 
-export interface Country {
-  code: string;
-  iso: string;
-  name: string;
-  flag: string;
-  regex: RegExp;
-  placeholder: string;
-}
+import { COUNTRIES } from "./countriesData";
+import { parsePhoneNumberFromString, getExampleNumber } from "libphonenumber-js";
+import examples from "libphonenumber-js/mobile/examples";
 
-export const COUNTRIES: Country[] = [
-  { iso: "US", code: "+1", name: "United States", flag: "🇺🇸", regex: /^\d{10}$/, placeholder: "201 555 0123" },
-  { iso: "GB", code: "+44", name: "United Kingdom", flag: "🇬🇧", regex: /^\d{10}$/, placeholder: "7911 123456" },
-  { iso: "AU", code: "+61", name: "Australia", flag: "🇦🇺", regex: /^\d{9}$/, placeholder: "412 345 678" },
-  { iso: "IN", code: "+91", name: "India", flag: "🇮🇳", regex: /^[6-9]\d{9}$/, placeholder: "98765 43210" },
-  { iso: "DE", code: "+49", name: "Germany", flag: "🇩🇪", regex: /^\d{10,11}$/, placeholder: "151 23456789" },
-  { iso: "LK", code: "+94", name: "Sri Lanka", flag: "🇱🇰", regex: /^[7]\d{8}$/, placeholder: "77 123 4567" },
-  { iso: "SG", code: "+65", name: "Singapore", flag: "🇸🇬", regex: /^[89]\d{7}$/, placeholder: "8123 4567" }
-];
+export { COUNTRIES };
 
 export function validatePhoneNumber(phone: string, countryIso: string): boolean {
-  const country = COUNTRIES.find((c) => c.iso === countryIso);
-  if (!country) return false;
-  // Strip all non-digits
-  const cleanPhone = phone.replace(/\D/g, "");
-  return country.regex.test(cleanPhone);
+  try {
+    const cleanPhone = phone.replace(/\D/g, "");
+    const phoneNumber = parsePhoneNumberFromString(cleanPhone, countryIso as any);
+    return phoneNumber ? phoneNumber.isValid() : false;
+  } catch (error) {
+    return false;
+  }
 }
 
 export function BuildForm({
@@ -63,6 +52,17 @@ export function BuildForm({
   const aesthetics: Aesthetic[] = ["Minimalist", "Bold", "Classic", "Brutalist"];
   
   const activeCountry = COUNTRIES.find((c) => c.iso === formData.countryCode) || COUNTRIES[0];
+  
+  let placeholder = "Enter phone number";
+  try {
+    const example = getExampleNumber(activeCountry.iso as any, examples);
+    if (example) {
+      placeholder = example.formatNational();
+    }
+  } catch (error) {
+    // Fallback
+  }
+
   const isValid = formData.phone === "" || validatePhoneNumber(formData.phone, formData.countryCode);
 
   return (
@@ -136,7 +136,7 @@ export function BuildForm({
           </div>
           <input
             type="tel"
-            placeholder={activeCountry.placeholder}
+            placeholder={placeholder}
             className="flex-1 px-4 py-3 bg-transparent text-[13px] placeholder:text-ink/30 focus:outline-none w-full h-full text-ink font-sans"
             value={formData.phone}
             onChange={(e) => onFieldChange("phone", e.target.value)}
@@ -145,7 +145,7 @@ export function BuildForm({
         </div>
         {!isValid && formData.phone !== "" && (
           <p className="text-[11px] text-accent/80 font-medium leading-none mt-1 animate-pulse">
-            * Please enter a valid number for {activeCountry.name} (e.g. {activeCountry.placeholder})
+            * Please enter a valid number for {activeCountry.name} (e.g. {placeholder})
           </p>
         )}
       </div>
