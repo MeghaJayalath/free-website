@@ -40,10 +40,9 @@ export function BuildForm({
         <label className="text-xs font-semibold uppercase tracking-wider text-ink/50">
           What are we building?
         </label>
-        <input
-          type="text"
-          placeholder="e.g. Portfolio for a photographer"
-          className="input-field"
+        <textarea
+          placeholder="e.g. A clean photographer portfolio with a gallery grid and bio."
+          className="input-field min-h-[80px] py-3 resize-none"
           value={formData.what}
           onChange={(e) => onFieldChange("what", e.target.value)}
           required

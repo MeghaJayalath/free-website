@@ -77,7 +77,7 @@ export default function App() {
   const isFormValid = formData.what.length > 3 && formData.phone.length >= 8;
 
   return (
-    <div id="app-container" className="min-h-screen w-full flex items-start lg:items-center justify-center pt-12 px-6 pb-24 md:p-12 lg:p-24 overflow-y-auto lg:overflow-hidden bg-canvas relative lg:h-screen">
+    <div id="app-container" className="min-h-screen w-full flex flex-col items-center justify-start lg:justify-center pt-12 px-6 pb-4 md:pt-12 md:px-12 md:pb-6 lg:p-24 overflow-y-auto lg:overflow-hidden bg-canvas relative lg:h-screen">
       {/* Curved Background Slideshow Belt */}
       <BackgroundSlideshow />
 
