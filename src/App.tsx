@@ -9,6 +9,7 @@ import { ValueProp } from "@/components/ValueProp";
 import { BuildForm, type FormData, type Aesthetic } from "@/components/BuildForm";
 import { SuccessMessage } from "@/components/SuccessMessage";
 import { Footer } from "@/components/Footer";
+import { BackgroundSlideshow } from "@/components/BackgroundSlideshow";
 
 export default function App() {
   const [formData, setFormData] = useState<FormData>({
@@ -77,11 +78,14 @@ export default function App() {
 
   return (
     <div id="app-container" className="min-h-screen w-full flex items-start lg:items-center justify-center pt-12 px-6 pb-24 md:p-12 lg:p-24 overflow-y-auto lg:overflow-hidden bg-canvas relative lg:h-screen">
+      {/* Curved Background Slideshow Belt */}
+      <BackgroundSlideshow />
+
       <motion.main 
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: [0.19, 1, 0.22, 1] }}
-        className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 w-full max-w-7xl items-center"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 w-full max-w-7xl items-center relative z-10"
       >
         {/* Left Side: Copy & Branding */}
         <ValueProp />
@@ -121,9 +125,6 @@ export default function App() {
               </motion.div>
             )}
           </AnimatePresence>
-
-          {/* Decorative background element for the artifact side */}
-          <div id="decorative-texture" className="absolute inset-0 -z-10 bg-[radial-gradient(#E8E6DC_1px,transparent_1px)] [background-size:20px_20px] opacity-40 mask-image-[radial-gradient(ellipse_at_center,black_70%,transparent_100%)]"></div>
         </div>
       </motion.main>
       
