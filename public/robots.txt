@@ -1,4 +1,4 @@
-# Bespoke Builds — robots.txt
+# Bespoke Builds - robots.txt
 # https://bespokebuilds.app/
 
 User-agent: *
