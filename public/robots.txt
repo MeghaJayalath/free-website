@@ -1,0 +1,9 @@
+# Bespoke Builds — robots.txt
+# https://bespokebuilds.app/
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://bespokebuilds.app/sitemap.xml

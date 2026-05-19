@@ -1,7 +1,4 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
+import { useState, useEffect } from "react";
 
 const IMAGES = [
   "https://i.postimg.cc/QMh35D7c/Lexigram-2.png",
@@ -12,10 +9,36 @@ const IMAGES = [
   "https://i.postimg.cc/Dyxj5KRN/Coachello-1.png"
 ];
 
-// Triple the list of images to ensure seamless infinite looping on wider displays
 const SLIDE_IMAGES = [...IMAGES, ...IMAGES, ...IMAGES];
 
 export function BackgroundSlideshow() {
+  const [loadedCount, setLoadedCount] = useState(0);
+
+  useEffect(() => {
+    let active = true;
+    let count = 0;
+
+    IMAGES.forEach((url) => {
+      const img = new Image();
+      img.src = url;
+      
+      const handleLoad = () => {
+        if (!active) return;
+        count++;
+        setLoadedCount(count);
+      };
+
+      img.onload = handleLoad;
+      img.onerror = handleLoad; // Count errors too to avoid blocking the UI
+    });
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const isAllLoaded = loadedCount >= IMAGES.length;
+
   return (
     <>
       {/* 
@@ -40,7 +63,11 @@ export function BackgroundSlideshow() {
         }}
       >
         {/* Warm color watermark container that lights up slightly on hover */}
-        <div className="flex gap-6 w-max items-center animate-marquee opacity-[0.2] transition-opacity duration-700 hover:opacity-[0.28] h-full">
+        <div 
+          className={`flex gap-6 w-max items-center animate-marquee transition-opacity duration-1000 h-full ${
+            isAllLoaded ? "opacity-[0.2] hover:opacity-[0.28]" : "opacity-0"
+          }`}
+        >
           {SLIDE_IMAGES.map((url, idx) => (
             <div
               key={idx}
@@ -50,7 +77,7 @@ export function BackgroundSlideshow() {
                 src={url}
                 alt="Bespoke Showcase"
                 className="w-full h-full object-cover saturate-[0.85] contrast-[1.02]"
-                loading="lazy"
+                loading="eager"
               />
             </div>
           ))}
