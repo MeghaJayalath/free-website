@@ -11,49 +11,19 @@ export interface Country {
 
 export const COUNTRIES: Country[] = [
   {
-    "iso": "AF",
-    "code": "+93",
-    "name": "Afghanistan"
-  },
-  {
-    "iso": "AX",
-    "code": "+358",
-    "name": "Aland Islands"
-  },
-  {
-    "iso": "AL",
-    "code": "+355",
-    "name": "Albania"
-  },
-  {
-    "iso": "DZ",
-    "code": "+213",
-    "name": "Algeria"
-  },
-  {
-    "iso": "AS",
-    "code": "+1684",
-    "name": "AmericanSamoa"
-  },
-  {
     "iso": "AD",
     "code": "+376",
     "name": "Andorra"
   },
   {
-    "iso": "AO",
-    "code": "+244",
-    "name": "Angola"
+    "iso": "AE",
+    "code": "+971",
+    "name": "United Arab Emirates"
   },
   {
-    "iso": "AI",
-    "code": "+1264",
-    "name": "Anguilla"
-  },
-  {
-    "iso": "AQ",
-    "code": "+672",
-    "name": "Antarctica"
+    "iso": "AF",
+    "code": "+93",
+    "name": "Afghanistan"
   },
   {
     "iso": "AG",
@@ -61,9 +31,14 @@ export const COUNTRIES: Country[] = [
     "name": "Antigua and Barbuda"
   },
   {
-    "iso": "AR",
-    "code": "+54",
-    "name": "Argentina"
+    "iso": "AI",
+    "code": "+1264",
+    "name": "Anguilla"
+  },
+  {
+    "iso": "AL",
+    "code": "+355",
+    "name": "Albania"
   },
   {
     "iso": "AM",
@@ -71,14 +46,29 @@ export const COUNTRIES: Country[] = [
     "name": "Armenia"
   },
   {
-    "iso": "AW",
-    "code": "+297",
-    "name": "Aruba"
+    "iso": "AN",
+    "code": "+599",
+    "name": "Netherlands Antilles"
   },
   {
-    "iso": "AU",
-    "code": "+61",
-    "name": "Australia"
+    "iso": "AO",
+    "code": "+244",
+    "name": "Angola"
+  },
+  {
+    "iso": "AQ",
+    "code": "+672",
+    "name": "Antarctica"
+  },
+  {
+    "iso": "AR",
+    "code": "+54",
+    "name": "Argentina"
+  },
+  {
+    "iso": "AS",
+    "code": "+1684",
+    "name": "AmericanSamoa"
   },
   {
     "iso": "AT",
@@ -86,64 +76,24 @@ export const COUNTRIES: Country[] = [
     "name": "Austria"
   },
   {
+    "iso": "AU",
+    "code": "+61",
+    "name": "Australia"
+  },
+  {
+    "iso": "AW",
+    "code": "+297",
+    "name": "Aruba"
+  },
+  {
+    "iso": "AX",
+    "code": "+358",
+    "name": "Aland Islands"
+  },
+  {
     "iso": "AZ",
     "code": "+994",
     "name": "Azerbaijan"
-  },
-  {
-    "iso": "BS",
-    "code": "+1242",
-    "name": "Bahamas"
-  },
-  {
-    "iso": "BH",
-    "code": "+973",
-    "name": "Bahrain"
-  },
-  {
-    "iso": "BD",
-    "code": "+880",
-    "name": "Bangladesh"
-  },
-  {
-    "iso": "BB",
-    "code": "+1246",
-    "name": "Barbados"
-  },
-  {
-    "iso": "BY",
-    "code": "+375",
-    "name": "Belarus"
-  },
-  {
-    "iso": "BE",
-    "code": "+32",
-    "name": "Belgium"
-  },
-  {
-    "iso": "BZ",
-    "code": "+501",
-    "name": "Belize"
-  },
-  {
-    "iso": "BJ",
-    "code": "+229",
-    "name": "Benin"
-  },
-  {
-    "iso": "BM",
-    "code": "+1441",
-    "name": "Bermuda"
-  },
-  {
-    "iso": "BT",
-    "code": "+975",
-    "name": "Bhutan"
-  },
-  {
-    "iso": "BO",
-    "code": "+591",
-    "name": "Bolivia, Plurinational State of"
   },
   {
     "iso": "BA",
@@ -151,29 +101,19 @@ export const COUNTRIES: Country[] = [
     "name": "Bosnia and Herzegovina"
   },
   {
-    "iso": "BW",
-    "code": "+267",
-    "name": "Botswana"
+    "iso": "BB",
+    "code": "+1246",
+    "name": "Barbados"
   },
   {
-    "iso": "BR",
-    "code": "+55",
-    "name": "Brazil"
+    "iso": "BD",
+    "code": "+880",
+    "name": "Bangladesh"
   },
   {
-    "iso": "IO",
-    "code": "+246",
-    "name": "British Indian Ocean Territory"
-  },
-  {
-    "iso": "BN",
-    "code": "+673",
-    "name": "Brunei Darussalam"
-  },
-  {
-    "iso": "BG",
-    "code": "+359",
-    "name": "Bulgaria"
+    "iso": "BE",
+    "code": "+32",
+    "name": "Belgium"
   },
   {
     "iso": "BF",
@@ -181,19 +121,74 @@ export const COUNTRIES: Country[] = [
     "name": "Burkina Faso"
   },
   {
+    "iso": "BG",
+    "code": "+359",
+    "name": "Bulgaria"
+  },
+  {
+    "iso": "BH",
+    "code": "+973",
+    "name": "Bahrain"
+  },
+  {
     "iso": "BI",
     "code": "+257",
     "name": "Burundi"
   },
   {
-    "iso": "KH",
-    "code": "+855",
-    "name": "Cambodia"
+    "iso": "BJ",
+    "code": "+229",
+    "name": "Benin"
   },
   {
-    "iso": "CM",
-    "code": "+237",
-    "name": "Cameroon"
+    "iso": "BL",
+    "code": "+590",
+    "name": "Saint Barthelemy"
+  },
+  {
+    "iso": "BM",
+    "code": "+1441",
+    "name": "Bermuda"
+  },
+  {
+    "iso": "BN",
+    "code": "+673",
+    "name": "Brunei Darussalam"
+  },
+  {
+    "iso": "BO",
+    "code": "+591",
+    "name": "Bolivia, Plurinational State of"
+  },
+  {
+    "iso": "BR",
+    "code": "+55",
+    "name": "Brazil"
+  },
+  {
+    "iso": "BS",
+    "code": "+1242",
+    "name": "Bahamas"
+  },
+  {
+    "iso": "BT",
+    "code": "+975",
+    "name": "Bhutan"
+  },
+  {
+    "iso": "BW",
+    "code": "+267",
+    "name": "Botswana"
+  },
+  {
+    "iso": "BY",
+    "code": "+375",
+    "name": "Belarus"
+  },
+  {
+    "iso": "BZ",
+    "code": "+501",
+    "name": "Belize"
   },
   {
     "iso": "CA",
@@ -201,59 +196,9 @@ export const COUNTRIES: Country[] = [
     "name": "Canada"
   },
   {
-    "iso": "CV",
-    "code": "+238",
-    "name": "Cape Verde"
-  },
-  {
-    "iso": "KY",
-    "code": "+345",
-    "name": "Cayman Islands"
-  },
-  {
-    "iso": "CF",
-    "code": "+236",
-    "name": "Central African Republic"
-  },
-  {
-    "iso": "TD",
-    "code": "+235",
-    "name": "Chad"
-  },
-  {
-    "iso": "CL",
-    "code": "+56",
-    "name": "Chile"
-  },
-  {
-    "iso": "CN",
-    "code": "+86",
-    "name": "China"
-  },
-  {
-    "iso": "CX",
-    "code": "+61",
-    "name": "Christmas Island"
-  },
-  {
     "iso": "CC",
     "code": "+61",
     "name": "Cocos (Keeling) Islands"
-  },
-  {
-    "iso": "CO",
-    "code": "+57",
-    "name": "Colombia"
-  },
-  {
-    "iso": "KM",
-    "code": "+269",
-    "name": "Comoros"
-  },
-  {
-    "iso": "CG",
-    "code": "+242",
-    "name": "Congo"
   },
   {
     "iso": "CD",
@@ -261,14 +206,19 @@ export const COUNTRIES: Country[] = [
     "name": "Congo, The Democratic Republic of the Congo"
   },
   {
-    "iso": "CK",
-    "code": "+682",
-    "name": "Cook Islands"
+    "iso": "CF",
+    "code": "+236",
+    "name": "Central African Republic"
   },
   {
-    "iso": "CR",
-    "code": "+506",
-    "name": "Costa Rica"
+    "iso": "CG",
+    "code": "+242",
+    "name": "Congo"
+  },
+  {
+    "iso": "CH",
+    "code": "+41",
+    "name": "Switzerland"
   },
   {
     "iso": "CI",
@@ -276,14 +226,49 @@ export const COUNTRIES: Country[] = [
     "name": "Cote d'Ivoire"
   },
   {
-    "iso": "HR",
-    "code": "+385",
-    "name": "Croatia"
+    "iso": "CK",
+    "code": "+682",
+    "name": "Cook Islands"
+  },
+  {
+    "iso": "CL",
+    "code": "+56",
+    "name": "Chile"
+  },
+  {
+    "iso": "CM",
+    "code": "+237",
+    "name": "Cameroon"
+  },
+  {
+    "iso": "CN",
+    "code": "+86",
+    "name": "China"
+  },
+  {
+    "iso": "CO",
+    "code": "+57",
+    "name": "Colombia"
+  },
+  {
+    "iso": "CR",
+    "code": "+506",
+    "name": "Costa Rica"
   },
   {
     "iso": "CU",
     "code": "+53",
     "name": "Cuba"
+  },
+  {
+    "iso": "CV",
+    "code": "+238",
+    "name": "Cape Verde"
+  },
+  {
+    "iso": "CX",
+    "code": "+61",
+    "name": "Christmas Island"
   },
   {
     "iso": "CY",
@@ -296,14 +281,19 @@ export const COUNTRIES: Country[] = [
     "name": "Czech Republic"
   },
   {
-    "iso": "DK",
-    "code": "+45",
-    "name": "Denmark"
+    "iso": "DE",
+    "code": "+49",
+    "name": "Germany"
   },
   {
     "iso": "DJ",
     "code": "+253",
     "name": "Djibouti"
+  },
+  {
+    "iso": "DK",
+    "code": "+45",
+    "name": "Denmark"
   },
   {
     "iso": "DM",
@@ -316,29 +306,14 @@ export const COUNTRIES: Country[] = [
     "name": "Dominican Republic"
   },
   {
+    "iso": "DZ",
+    "code": "+213",
+    "name": "Algeria"
+  },
+  {
     "iso": "EC",
     "code": "+593",
     "name": "Ecuador"
-  },
-  {
-    "iso": "EG",
-    "code": "+20",
-    "name": "Egypt"
-  },
-  {
-    "iso": "SV",
-    "code": "+503",
-    "name": "El Salvador"
-  },
-  {
-    "iso": "GQ",
-    "code": "+240",
-    "name": "Equatorial Guinea"
-  },
-  {
-    "iso": "ER",
-    "code": "+291",
-    "name": "Eritrea"
   },
   {
     "iso": "EE",
@@ -346,24 +321,24 @@ export const COUNTRIES: Country[] = [
     "name": "Estonia"
   },
   {
+    "iso": "EG",
+    "code": "+20",
+    "name": "Egypt"
+  },
+  {
+    "iso": "ER",
+    "code": "+291",
+    "name": "Eritrea"
+  },
+  {
+    "iso": "ES",
+    "code": "+34",
+    "name": "Spain"
+  },
+  {
     "iso": "ET",
     "code": "+251",
     "name": "Ethiopia"
-  },
-  {
-    "iso": "FK",
-    "code": "+500",
-    "name": "Falkland Islands (Malvinas)"
-  },
-  {
-    "iso": "FO",
-    "code": "+298",
-    "name": "Faroe Islands"
-  },
-  {
-    "iso": "FJ",
-    "code": "+679",
-    "name": "Fiji"
   },
   {
     "iso": "FI",
@@ -371,19 +346,29 @@ export const COUNTRIES: Country[] = [
     "name": "Finland"
   },
   {
+    "iso": "FJ",
+    "code": "+679",
+    "name": "Fiji"
+  },
+  {
+    "iso": "FK",
+    "code": "+500",
+    "name": "Falkland Islands (Malvinas)"
+  },
+  {
+    "iso": "FM",
+    "code": "+691",
+    "name": "Micronesia, Federated States of Micronesia"
+  },
+  {
+    "iso": "FO",
+    "code": "+298",
+    "name": "Faroe Islands"
+  },
+  {
     "iso": "FR",
     "code": "+33",
     "name": "France"
-  },
-  {
-    "iso": "GF",
-    "code": "+594",
-    "name": "French Guiana"
-  },
-  {
-    "iso": "PF",
-    "code": "+689",
-    "name": "French Polynesia"
   },
   {
     "iso": "GA",
@@ -391,9 +376,14 @@ export const COUNTRIES: Country[] = [
     "name": "Gabon"
   },
   {
-    "iso": "GM",
-    "code": "+220",
-    "name": "Gambia"
+    "iso": "GB",
+    "code": "+44",
+    "name": "United Kingdom"
+  },
+  {
+    "iso": "GD",
+    "code": "+1473",
+    "name": "Grenada"
   },
   {
     "iso": "GE",
@@ -401,9 +391,14 @@ export const COUNTRIES: Country[] = [
     "name": "Georgia"
   },
   {
-    "iso": "DE",
-    "code": "+49",
-    "name": "Germany"
+    "iso": "GF",
+    "code": "+594",
+    "name": "French Guiana"
+  },
+  {
+    "iso": "GG",
+    "code": "+44",
+    "name": "Guernsey"
   },
   {
     "iso": "GH",
@@ -416,19 +411,19 @@ export const COUNTRIES: Country[] = [
     "name": "Gibraltar"
   },
   {
-    "iso": "GR",
-    "code": "+30",
-    "name": "Greece"
-  },
-  {
     "iso": "GL",
     "code": "+299",
     "name": "Greenland"
   },
   {
-    "iso": "GD",
-    "code": "+1473",
-    "name": "Grenada"
+    "iso": "GM",
+    "code": "+220",
+    "name": "Gambia"
+  },
+  {
+    "iso": "GN",
+    "code": "+224",
+    "name": "Guinea"
   },
   {
     "iso": "GP",
@@ -436,9 +431,19 @@ export const COUNTRIES: Country[] = [
     "name": "Guadeloupe"
   },
   {
-    "iso": "GU",
-    "code": "+1671",
-    "name": "Guam"
+    "iso": "GQ",
+    "code": "+240",
+    "name": "Equatorial Guinea"
+  },
+  {
+    "iso": "GR",
+    "code": "+30",
+    "name": "Greece"
+  },
+  {
+    "iso": "GS",
+    "code": "+500",
+    "name": "South Georgia and the South Sandwich Islands"
   },
   {
     "iso": "GT",
@@ -446,14 +451,9 @@ export const COUNTRIES: Country[] = [
     "name": "Guatemala"
   },
   {
-    "iso": "GG",
-    "code": "+44",
-    "name": "Guernsey"
-  },
-  {
-    "iso": "GN",
-    "code": "+224",
-    "name": "Guinea"
+    "iso": "GU",
+    "code": "+1671",
+    "name": "Guam"
   },
   {
     "iso": "GW",
@@ -466,14 +466,9 @@ export const COUNTRIES: Country[] = [
     "name": "Guyana"
   },
   {
-    "iso": "HT",
-    "code": "+509",
-    "name": "Haiti"
-  },
-  {
-    "iso": "VA",
-    "code": "+379",
-    "name": "Holy See (Vatican City State)"
+    "iso": "HK",
+    "code": "+852",
+    "name": "Hong Kong"
   },
   {
     "iso": "HN",
@@ -481,9 +476,14 @@ export const COUNTRIES: Country[] = [
     "name": "Honduras"
   },
   {
-    "iso": "HK",
-    "code": "+852",
-    "name": "Hong Kong"
+    "iso": "HR",
+    "code": "+385",
+    "name": "Croatia"
+  },
+  {
+    "iso": "HT",
+    "code": "+509",
+    "name": "Haiti"
   },
   {
     "iso": "HU",
@@ -491,29 +491,9 @@ export const COUNTRIES: Country[] = [
     "name": "Hungary"
   },
   {
-    "iso": "IS",
-    "code": "+354",
-    "name": "Iceland"
-  },
-  {
-    "iso": "IN",
-    "code": "+91",
-    "name": "India"
-  },
-  {
     "iso": "ID",
     "code": "+62",
     "name": "Indonesia"
-  },
-  {
-    "iso": "IR",
-    "code": "+98",
-    "name": "Iran, Islamic Republic of Persian Gulf"
-  },
-  {
-    "iso": "IQ",
-    "code": "+964",
-    "name": "Iraq"
   },
   {
     "iso": "IE",
@@ -521,14 +501,39 @@ export const COUNTRIES: Country[] = [
     "name": "Ireland"
   },
   {
+    "iso": "IL",
+    "code": "+972",
+    "name": "Israel"
+  },
+  {
     "iso": "IM",
     "code": "+44",
     "name": "Isle of Man"
   },
   {
-    "iso": "IL",
-    "code": "+972",
-    "name": "Israel"
+    "iso": "IN",
+    "code": "+91",
+    "name": "India"
+  },
+  {
+    "iso": "IO",
+    "code": "+246",
+    "name": "British Indian Ocean Territory"
+  },
+  {
+    "iso": "IQ",
+    "code": "+964",
+    "name": "Iraq"
+  },
+  {
+    "iso": "IR",
+    "code": "+98",
+    "name": "Iran, Islamic Republic of Persian Gulf"
+  },
+  {
+    "iso": "IS",
+    "code": "+354",
+    "name": "Iceland"
   },
   {
     "iso": "IT",
@@ -536,19 +541,14 @@ export const COUNTRIES: Country[] = [
     "name": "Italy"
   },
   {
-    "iso": "JM",
-    "code": "+1876",
-    "name": "Jamaica"
-  },
-  {
-    "iso": "JP",
-    "code": "+81",
-    "name": "Japan"
-  },
-  {
     "iso": "JE",
     "code": "+44",
     "name": "Jersey"
+  },
+  {
+    "iso": "JM",
+    "code": "+1876",
+    "name": "Jamaica"
   },
   {
     "iso": "JO",
@@ -556,9 +556,9 @@ export const COUNTRIES: Country[] = [
     "name": "Jordan"
   },
   {
-    "iso": "KZ",
-    "code": "+77",
-    "name": "Kazakhstan"
+    "iso": "JP",
+    "code": "+81",
+    "name": "Japan"
   },
   {
     "iso": "KE",
@@ -566,9 +566,29 @@ export const COUNTRIES: Country[] = [
     "name": "Kenya"
   },
   {
+    "iso": "KG",
+    "code": "+996",
+    "name": "Kyrgyzstan"
+  },
+  {
+    "iso": "KH",
+    "code": "+855",
+    "name": "Cambodia"
+  },
+  {
     "iso": "KI",
     "code": "+686",
     "name": "Kiribati"
+  },
+  {
+    "iso": "KM",
+    "code": "+269",
+    "name": "Comoros"
+  },
+  {
+    "iso": "KN",
+    "code": "+1869",
+    "name": "Saint Kitts and Nevis"
   },
   {
     "iso": "KP",
@@ -586,9 +606,14 @@ export const COUNTRIES: Country[] = [
     "name": "Kuwait"
   },
   {
-    "iso": "KG",
-    "code": "+996",
-    "name": "Kyrgyzstan"
+    "iso": "KY",
+    "code": "+345",
+    "name": "Cayman Islands"
+  },
+  {
+    "iso": "KZ",
+    "code": "+77",
+    "name": "Kazakhstan"
   },
   {
     "iso": "LA",
@@ -596,19 +621,24 @@ export const COUNTRIES: Country[] = [
     "name": "Laos"
   },
   {
-    "iso": "LV",
-    "code": "+371",
-    "name": "Latvia"
-  },
-  {
     "iso": "LB",
     "code": "+961",
     "name": "Lebanon"
   },
   {
-    "iso": "LS",
-    "code": "+266",
-    "name": "Lesotho"
+    "iso": "LC",
+    "code": "+1758",
+    "name": "Saint Lucia"
+  },
+  {
+    "iso": "LI",
+    "code": "+423",
+    "name": "Liechtenstein"
+  },
+  {
+    "iso": "LK",
+    "code": "+94",
+    "name": "Sri Lanka"
   },
   {
     "iso": "LR",
@@ -616,14 +646,9 @@ export const COUNTRIES: Country[] = [
     "name": "Liberia"
   },
   {
-    "iso": "LY",
-    "code": "+218",
-    "name": "Libyan Arab Jamahiriya"
-  },
-  {
-    "iso": "LI",
-    "code": "+423",
-    "name": "Liechtenstein"
+    "iso": "LS",
+    "code": "+266",
+    "name": "Lesotho"
   },
   {
     "iso": "LT",
@@ -636,14 +661,39 @@ export const COUNTRIES: Country[] = [
     "name": "Luxembourg"
   },
   {
-    "iso": "MO",
-    "code": "+853",
-    "name": "Macao"
+    "iso": "LV",
+    "code": "+371",
+    "name": "Latvia"
   },
   {
-    "iso": "MK",
-    "code": "+389",
-    "name": "Macedonia"
+    "iso": "LY",
+    "code": "+218",
+    "name": "Libyan Arab Jamahiriya"
+  },
+  {
+    "iso": "MA",
+    "code": "+212",
+    "name": "Morocco"
+  },
+  {
+    "iso": "MC",
+    "code": "+377",
+    "name": "Monaco"
+  },
+  {
+    "iso": "MD",
+    "code": "+373",
+    "name": "Moldova"
+  },
+  {
+    "iso": "ME",
+    "code": "+382",
+    "name": "Montenegro"
+  },
+  {
+    "iso": "MF",
+    "code": "+590",
+    "name": "Saint Martin"
   },
   {
     "iso": "MG",
@@ -651,19 +701,14 @@ export const COUNTRIES: Country[] = [
     "name": "Madagascar"
   },
   {
-    "iso": "MW",
-    "code": "+265",
-    "name": "Malawi"
+    "iso": "MH",
+    "code": "+692",
+    "name": "Marshall Islands"
   },
   {
-    "iso": "MY",
-    "code": "+60",
-    "name": "Malaysia"
-  },
-  {
-    "iso": "MV",
-    "code": "+960",
-    "name": "Maldives"
+    "iso": "MK",
+    "code": "+389",
+    "name": "Macedonia"
   },
   {
     "iso": "ML",
@@ -671,14 +716,24 @@ export const COUNTRIES: Country[] = [
     "name": "Mali"
   },
   {
-    "iso": "MT",
-    "code": "+356",
-    "name": "Malta"
+    "iso": "MM",
+    "code": "+95",
+    "name": "Myanmar"
   },
   {
-    "iso": "MH",
-    "code": "+692",
-    "name": "Marshall Islands"
+    "iso": "MN",
+    "code": "+976",
+    "name": "Mongolia"
+  },
+  {
+    "iso": "MO",
+    "code": "+853",
+    "name": "Macao"
+  },
+  {
+    "iso": "MP",
+    "code": "+1670",
+    "name": "Northern Mariana Islands"
   },
   {
     "iso": "MQ",
@@ -691,14 +746,29 @@ export const COUNTRIES: Country[] = [
     "name": "Mauritania"
   },
   {
+    "iso": "MS",
+    "code": "+1664",
+    "name": "Montserrat"
+  },
+  {
+    "iso": "MT",
+    "code": "+356",
+    "name": "Malta"
+  },
+  {
     "iso": "MU",
     "code": "+230",
     "name": "Mauritius"
   },
   {
-    "iso": "YT",
-    "code": "+262",
-    "name": "Mayotte"
+    "iso": "MV",
+    "code": "+960",
+    "name": "Maldives"
+  },
+  {
+    "iso": "MW",
+    "code": "+265",
+    "name": "Malawi"
   },
   {
     "iso": "MX",
@@ -706,39 +776,9 @@ export const COUNTRIES: Country[] = [
     "name": "Mexico"
   },
   {
-    "iso": "FM",
-    "code": "+691",
-    "name": "Micronesia, Federated States of Micronesia"
-  },
-  {
-    "iso": "MD",
-    "code": "+373",
-    "name": "Moldova"
-  },
-  {
-    "iso": "MC",
-    "code": "+377",
-    "name": "Monaco"
-  },
-  {
-    "iso": "MN",
-    "code": "+976",
-    "name": "Mongolia"
-  },
-  {
-    "iso": "ME",
-    "code": "+382",
-    "name": "Montenegro"
-  },
-  {
-    "iso": "MS",
-    "code": "+1664",
-    "name": "Montserrat"
-  },
-  {
-    "iso": "MA",
-    "code": "+212",
-    "name": "Morocco"
+    "iso": "MY",
+    "code": "+60",
+    "name": "Malaysia"
   },
   {
     "iso": "MZ",
@@ -746,34 +786,9 @@ export const COUNTRIES: Country[] = [
     "name": "Mozambique"
   },
   {
-    "iso": "MM",
-    "code": "+95",
-    "name": "Myanmar"
-  },
-  {
     "iso": "NA",
     "code": "+264",
     "name": "Namibia"
-  },
-  {
-    "iso": "NR",
-    "code": "+674",
-    "name": "Nauru"
-  },
-  {
-    "iso": "NP",
-    "code": "+977",
-    "name": "Nepal"
-  },
-  {
-    "iso": "NL",
-    "code": "+31",
-    "name": "Netherlands"
-  },
-  {
-    "iso": "AN",
-    "code": "+599",
-    "name": "Netherlands Antilles"
   },
   {
     "iso": "NC",
@@ -781,29 +796,9 @@ export const COUNTRIES: Country[] = [
     "name": "New Caledonia"
   },
   {
-    "iso": "NZ",
-    "code": "+64",
-    "name": "New Zealand"
-  },
-  {
-    "iso": "NI",
-    "code": "+505",
-    "name": "Nicaragua"
-  },
-  {
     "iso": "NE",
     "code": "+227",
     "name": "Niger"
-  },
-  {
-    "iso": "NG",
-    "code": "+234",
-    "name": "Nigeria"
-  },
-  {
-    "iso": "NU",
-    "code": "+683",
-    "name": "Niue"
   },
   {
     "iso": "NF",
@@ -811,9 +806,19 @@ export const COUNTRIES: Country[] = [
     "name": "Norfolk Island"
   },
   {
-    "iso": "MP",
-    "code": "+1670",
-    "name": "Northern Mariana Islands"
+    "iso": "NG",
+    "code": "+234",
+    "name": "Nigeria"
+  },
+  {
+    "iso": "NI",
+    "code": "+505",
+    "name": "Nicaragua"
+  },
+  {
+    "iso": "NL",
+    "code": "+31",
+    "name": "Netherlands"
   },
   {
     "iso": "NO",
@@ -821,24 +826,29 @@ export const COUNTRIES: Country[] = [
     "name": "Norway"
   },
   {
+    "iso": "NP",
+    "code": "+977",
+    "name": "Nepal"
+  },
+  {
+    "iso": "NR",
+    "code": "+674",
+    "name": "Nauru"
+  },
+  {
+    "iso": "NU",
+    "code": "+683",
+    "name": "Niue"
+  },
+  {
+    "iso": "NZ",
+    "code": "+64",
+    "name": "New Zealand"
+  },
+  {
     "iso": "OM",
     "code": "+968",
     "name": "Oman"
-  },
-  {
-    "iso": "PK",
-    "code": "+92",
-    "name": "Pakistan"
-  },
-  {
-    "iso": "PW",
-    "code": "+680",
-    "name": "Palau"
-  },
-  {
-    "iso": "PS",
-    "code": "+970",
-    "name": "Palestinian Territory, Occupied"
   },
   {
     "iso": "PA",
@@ -846,19 +856,19 @@ export const COUNTRIES: Country[] = [
     "name": "Panama"
   },
   {
-    "iso": "PG",
-    "code": "+675",
-    "name": "Papua New Guinea"
-  },
-  {
-    "iso": "PY",
-    "code": "+595",
-    "name": "Paraguay"
-  },
-  {
     "iso": "PE",
     "code": "+51",
     "name": "Peru"
+  },
+  {
+    "iso": "PF",
+    "code": "+689",
+    "name": "French Polynesia"
+  },
+  {
+    "iso": "PG",
+    "code": "+675",
+    "name": "Papua New Guinea"
   },
   {
     "iso": "PH",
@@ -866,9 +876,9 @@ export const COUNTRIES: Country[] = [
     "name": "Philippines"
   },
   {
-    "iso": "PN",
-    "code": "+872",
-    "name": "Pitcairn"
+    "iso": "PK",
+    "code": "+92",
+    "name": "Pakistan"
   },
   {
     "iso": "PL",
@@ -876,14 +886,39 @@ export const COUNTRIES: Country[] = [
     "name": "Poland"
   },
   {
-    "iso": "PT",
-    "code": "+351",
-    "name": "Portugal"
+    "iso": "PM",
+    "code": "+508",
+    "name": "Saint Pierre and Miquelon"
+  },
+  {
+    "iso": "PN",
+    "code": "+872",
+    "name": "Pitcairn"
   },
   {
     "iso": "PR",
     "code": "+1939",
     "name": "Puerto Rico"
+  },
+  {
+    "iso": "PS",
+    "code": "+970",
+    "name": "Palestinian Territory, Occupied"
+  },
+  {
+    "iso": "PT",
+    "code": "+351",
+    "name": "Portugal"
+  },
+  {
+    "iso": "PW",
+    "code": "+680",
+    "name": "Palau"
+  },
+  {
+    "iso": "PY",
+    "code": "+595",
+    "name": "Paraguay"
   },
   {
     "iso": "QA",
@@ -901,6 +936,11 @@ export const COUNTRIES: Country[] = [
     "name": "Romania"
   },
   {
+    "iso": "RS",
+    "code": "+381",
+    "name": "Serbia"
+  },
+  {
     "iso": "RU",
     "code": "+7",
     "name": "Russia"
@@ -911,94 +951,9 @@ export const COUNTRIES: Country[] = [
     "name": "Rwanda"
   },
   {
-    "iso": "BL",
-    "code": "+590",
-    "name": "Saint Barthelemy"
-  },
-  {
-    "iso": "SH",
-    "code": "+290",
-    "name": "Saint Helena, Ascension and Tristan Da Cunha"
-  },
-  {
-    "iso": "KN",
-    "code": "+1869",
-    "name": "Saint Kitts and Nevis"
-  },
-  {
-    "iso": "LC",
-    "code": "+1758",
-    "name": "Saint Lucia"
-  },
-  {
-    "iso": "MF",
-    "code": "+590",
-    "name": "Saint Martin"
-  },
-  {
-    "iso": "PM",
-    "code": "+508",
-    "name": "Saint Pierre and Miquelon"
-  },
-  {
-    "iso": "VC",
-    "code": "+1784",
-    "name": "Saint Vincent and the Grenadines"
-  },
-  {
-    "iso": "WS",
-    "code": "+685",
-    "name": "Samoa"
-  },
-  {
-    "iso": "SM",
-    "code": "+378",
-    "name": "San Marino"
-  },
-  {
-    "iso": "ST",
-    "code": "+239",
-    "name": "Sao Tome and Principe"
-  },
-  {
     "iso": "SA",
     "code": "+966",
     "name": "Saudi Arabia"
-  },
-  {
-    "iso": "SN",
-    "code": "+221",
-    "name": "Senegal"
-  },
-  {
-    "iso": "RS",
-    "code": "+381",
-    "name": "Serbia"
-  },
-  {
-    "iso": "SC",
-    "code": "+248",
-    "name": "Seychelles"
-  },
-  {
-    "iso": "SL",
-    "code": "+232",
-    "name": "Sierra Leone"
-  },
-  {
-    "iso": "SG",
-    "code": "+65",
-    "name": "Singapore"
-  },
-  {
-    "iso": "SK",
-    "code": "+421",
-    "name": "Slovakia"
-  },
-  {
-    "iso": "SI",
-    "code": "+386",
-    "name": "Slovenia"
   },
   {
     "iso": "SB",
@@ -1006,34 +961,9 @@ export const COUNTRIES: Country[] = [
     "name": "Solomon Islands"
   },
   {
-    "iso": "SO",
-    "code": "+252",
-    "name": "Somalia"
-  },
-  {
-    "iso": "ZA",
-    "code": "+27",
-    "name": "South Africa"
-  },
-  {
-    "iso": "GS",
-    "code": "+500",
-    "name": "South Georgia and the South Sandwich Islands"
-  },
-  {
-    "iso": "SS",
-    "code": "+211",
-    "name": "South Sudan"
-  },
-  {
-    "iso": "ES",
-    "code": "+34",
-    "name": "Spain"
-  },
-  {
-    "iso": "LK",
-    "code": "+94",
-    "name": "Sri Lanka"
+    "iso": "SC",
+    "code": "+248",
+    "name": "Seychelles"
   },
   {
     "iso": "SD",
@@ -1041,9 +971,24 @@ export const COUNTRIES: Country[] = [
     "name": "Sudan"
   },
   {
-    "iso": "SR",
-    "code": "+597",
-    "name": "Suriname"
+    "iso": "SE",
+    "code": "+46",
+    "name": "Sweden"
+  },
+  {
+    "iso": "SG",
+    "code": "+65",
+    "name": "Singapore"
+  },
+  {
+    "iso": "SH",
+    "code": "+290",
+    "name": "Saint Helena, Ascension and Tristan Da Cunha"
+  },
+  {
+    "iso": "SI",
+    "code": "+386",
+    "name": "Slovenia"
   },
   {
     "iso": "SJ",
@@ -1051,19 +996,49 @@ export const COUNTRIES: Country[] = [
     "name": "Svalbard and Jan Mayen"
   },
   {
-    "iso": "SZ",
-    "code": "+268",
-    "name": "Swaziland"
+    "iso": "SK",
+    "code": "+421",
+    "name": "Slovakia"
   },
   {
-    "iso": "SE",
-    "code": "+46",
-    "name": "Sweden"
+    "iso": "SL",
+    "code": "+232",
+    "name": "Sierra Leone"
   },
   {
-    "iso": "CH",
-    "code": "+41",
-    "name": "Switzerland"
+    "iso": "SM",
+    "code": "+378",
+    "name": "San Marino"
+  },
+  {
+    "iso": "SN",
+    "code": "+221",
+    "name": "Senegal"
+  },
+  {
+    "iso": "SO",
+    "code": "+252",
+    "name": "Somalia"
+  },
+  {
+    "iso": "SR",
+    "code": "+597",
+    "name": "Suriname"
+  },
+  {
+    "iso": "SS",
+    "code": "+211",
+    "name": "South Sudan"
+  },
+  {
+    "iso": "ST",
+    "code": "+239",
+    "name": "Sao Tome and Principe"
+  },
+  {
+    "iso": "SV",
+    "code": "+503",
+    "name": "El Salvador"
   },
   {
     "iso": "SY",
@@ -1071,64 +1046,9 @@ export const COUNTRIES: Country[] = [
     "name": "Syrian Arab Republic"
   },
   {
-    "iso": "TW",
-    "code": "+886",
-    "name": "Taiwan"
-  },
-  {
-    "iso": "TJ",
-    "code": "+992",
-    "name": "Tajikistan"
-  },
-  {
-    "iso": "TZ",
-    "code": "+255",
-    "name": "Tanzania, United Republic of Tanzania"
-  },
-  {
-    "iso": "TH",
-    "code": "+66",
-    "name": "Thailand"
-  },
-  {
-    "iso": "TL",
-    "code": "+670",
-    "name": "Timor-Leste"
-  },
-  {
-    "iso": "TG",
-    "code": "+228",
-    "name": "Togo"
-  },
-  {
-    "iso": "TK",
-    "code": "+690",
-    "name": "Tokelau"
-  },
-  {
-    "iso": "TO",
-    "code": "+676",
-    "name": "Tonga"
-  },
-  {
-    "iso": "TT",
-    "code": "+1868",
-    "name": "Trinidad and Tobago"
-  },
-  {
-    "iso": "TN",
-    "code": "+216",
-    "name": "Tunisia"
-  },
-  {
-    "iso": "TR",
-    "code": "+90",
-    "name": "Turkey"
-  },
-  {
-    "iso": "TM",
-    "code": "+993",
-    "name": "Turkmenistan"
+    "iso": "SZ",
+    "code": "+268",
+    "name": "Swaziland"
   },
   {
     "iso": "TC",
@@ -1136,14 +1056,74 @@ export const COUNTRIES: Country[] = [
     "name": "Turks and Caicos Islands"
   },
   {
+    "iso": "TD",
+    "code": "+235",
+    "name": "Chad"
+  },
+  {
+    "iso": "TG",
+    "code": "+228",
+    "name": "Togo"
+  },
+  {
+    "iso": "TH",
+    "code": "+66",
+    "name": "Thailand"
+  },
+  {
+    "iso": "TJ",
+    "code": "+992",
+    "name": "Tajikistan"
+  },
+  {
+    "iso": "TK",
+    "code": "+690",
+    "name": "Tokelau"
+  },
+  {
+    "iso": "TL",
+    "code": "+670",
+    "name": "Timor-Leste"
+  },
+  {
+    "iso": "TM",
+    "code": "+993",
+    "name": "Turkmenistan"
+  },
+  {
+    "iso": "TN",
+    "code": "+216",
+    "name": "Tunisia"
+  },
+  {
+    "iso": "TO",
+    "code": "+676",
+    "name": "Tonga"
+  },
+  {
+    "iso": "TR",
+    "code": "+90",
+    "name": "Turkey"
+  },
+  {
+    "iso": "TT",
+    "code": "+1868",
+    "name": "Trinidad and Tobago"
+  },
+  {
     "iso": "TV",
     "code": "+688",
     "name": "Tuvalu"
   },
   {
-    "iso": "UG",
-    "code": "+256",
-    "name": "Uganda"
+    "iso": "TW",
+    "code": "+886",
+    "name": "Taiwan"
+  },
+  {
+    "iso": "TZ",
+    "code": "+255",
+    "name": "Tanzania, United Republic of Tanzania"
   },
   {
     "iso": "UA",
@@ -1151,14 +1131,9 @@ export const COUNTRIES: Country[] = [
     "name": "Ukraine"
   },
   {
-    "iso": "AE",
-    "code": "+971",
-    "name": "United Arab Emirates"
-  },
-  {
-    "iso": "GB",
-    "code": "+44",
-    "name": "United Kingdom"
+    "iso": "UG",
+    "code": "+256",
+    "name": "Uganda"
   },
   {
     "iso": "US",
@@ -1176,19 +1151,19 @@ export const COUNTRIES: Country[] = [
     "name": "Uzbekistan"
   },
   {
-    "iso": "VU",
-    "code": "+678",
-    "name": "Vanuatu"
+    "iso": "VA",
+    "code": "+379",
+    "name": "Holy See (Vatican City State)"
+  },
+  {
+    "iso": "VC",
+    "code": "+1784",
+    "name": "Saint Vincent and the Grenadines"
   },
   {
     "iso": "VE",
     "code": "+58",
     "name": "Venezuela, Bolivarian Republic of Venezuela"
-  },
-  {
-    "iso": "VN",
-    "code": "+84",
-    "name": "Vietnam"
   },
   {
     "iso": "VG",
@@ -1201,14 +1176,39 @@ export const COUNTRIES: Country[] = [
     "name": "Virgin Islands, U.S."
   },
   {
+    "iso": "VN",
+    "code": "+84",
+    "name": "Vietnam"
+  },
+  {
+    "iso": "VU",
+    "code": "+678",
+    "name": "Vanuatu"
+  },
+  {
     "iso": "WF",
     "code": "+681",
     "name": "Wallis and Futuna"
   },
   {
+    "iso": "WS",
+    "code": "+685",
+    "name": "Samoa"
+  },
+  {
     "iso": "YE",
     "code": "+967",
     "name": "Yemen"
+  },
+  {
+    "iso": "YT",
+    "code": "+262",
+    "name": "Mayotte"
+  },
+  {
+    "iso": "ZA",
+    "code": "+27",
+    "name": "South Africa"
   },
   {
     "iso": "ZM",
