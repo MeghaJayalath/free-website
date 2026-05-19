@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Instrument+Sans:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", serif;
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-canvas: #FAF9F5;
+  --color-ink: #141413;
+  --color-accent: #D97757;
+  --color-border-subtle: #E8E6DC;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink font-sans antialiased selection:bg-accent/20;
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+.claude-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: 0 4px 20px rgba(20, 20, 19, 0.05);
+  border-radius: 8px;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 bg-white border border-border-subtle rounded-md focus:outline-none focus:border-accent/50 transition-colors placeholder:text-ink/30;
+}
+
+.tag-btn {
+  @apply px-3 py-1.5 border border-border-subtle rounded-full text-sm transition-all hover:border-ink/20;
+}
+
+.tag-btn.active {
+  @apply bg-ink text-white border-ink;
+}

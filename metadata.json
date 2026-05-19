@@ -1,0 +1,6 @@
+{
+  "name": "Bespoke Builds",
+  "description": "A premium free website building service with Claude-inspired editorial minimalism.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
