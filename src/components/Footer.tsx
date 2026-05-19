@@ -30,7 +30,7 @@ export function Footer() {
         href="mailto:megha@zotech.xyz"
         className="order-1 md:order-3 text-center md:text-right w-full cursor-pointer hover:text-accent transition-colors duration-300 ease-in-out"
       >
-        hello@bespokebuilds.com
+        hello@bespokebuilds.app
       </a>
     </motion.footer>
   );
