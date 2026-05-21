@@ -12,10 +12,10 @@ export function Footer() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-      className="relative mt-12 md:mt-0 md:absolute md:bottom-6 md:left-0 md:w-full flex flex-col md:grid md:grid-cols-3 items-center gap-4 md:gap-0 text-xs text-ink/40 font-sans tracking-wide px-6 md:px-12 lg:px-24 z-30"
+      className="relative mt-12 lg:mt-0 lg:absolute lg:bottom-6 lg:left-0 lg:w-full flex flex-col lg:grid lg:grid-cols-3 items-center gap-4 lg:gap-0 text-xs text-ink/40 font-sans tracking-wide px-6 md:px-12 lg:px-24 z-30"
     >
-      <span className="order-2 md:order-1 text-center md:text-left w-full">&copy; {currentYear} Bespoke Builds. All rights reserved.</span>
-      <span className="order-3 md:order-2 text-center w-full">
+      <span className="order-2 lg:order-1 text-center lg:text-left w-full">&copy; {currentYear} Bespoke Builds. All rights reserved.</span>
+      <span className="order-3 lg:order-2 text-center w-full">
         Powered by{" "}
         <a
           href="http://zeroonetech.xyz/"
@@ -28,7 +28,7 @@ export function Footer() {
       </span>
       <a
         href="mailto:megha@zotech.xyz"
-        className="order-1 md:order-3 text-center md:text-right w-full cursor-pointer hover:text-accent transition-colors duration-300 ease-in-out"
+        className="order-1 lg:order-3 text-center lg:text-right w-full cursor-pointer hover:text-accent transition-colors duration-300 ease-in-out"
       >
         hello@bespokebuilds.app
       </a>
