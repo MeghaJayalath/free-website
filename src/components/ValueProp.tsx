@@ -17,9 +17,7 @@ export function ValueProp() {
         </h1>
 
         <p className="text-lg md:text-xl text-ink/70 max-w-lg mb-12 leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
-          We believe every great idea deserves a premium digital home.
-          No builders, no templates, no cost. Just professional design
-          commissioned specifically for your vision.
+          We believe every great idea deserves a premium digital home. No builders, no templates, no cost. Just professional design commissioned specifically for your vision and supported beyond delivery.
         </p>
       </div>
 
